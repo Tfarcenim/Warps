@@ -1,8 +1,7 @@
-package com.example.examplemod.mixin;
+package tfar.warps.mixin;
 
-import com.example.examplemod.Constants;
+import tfar.warps.Warps;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -14,7 +13,7 @@ public class MixinMinecraft {
     @Inject(at = @At("TAIL"), method = "<init>")
     private void init(CallbackInfo info) {
         
-        Constants.LOG.info("This line is printed by an example mod common mixin!");
-        Constants.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
+        Warps.LOG.info("This line is printed by an example mod common mixin!");
+        Warps.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
     }
 }

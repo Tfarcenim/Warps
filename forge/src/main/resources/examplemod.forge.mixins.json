@@ -7,7 +7,7 @@
     "mixins": [
     ],
     "client": [
-        "MixinTitleScreen"
+      "tfar.warps.mixin.MixinTitleScreen"
     ],
     "server": [
     ],
